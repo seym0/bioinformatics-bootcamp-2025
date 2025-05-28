@@ -78,7 +78,7 @@ SAMPLES = [
 ]
 
 # Define output directory
-OUTDIR = "fastqc_reports"
+OUTDIR = "fastqc_reports_raw_data"
 
 # Rule to generate all FastQC reports
 rule all:
