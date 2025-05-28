@@ -1,0 +1,66 @@
+# snakemake -c 4 -s Snakefile_fastp
+
+# Define input files
+SAMPLES = [
+    'reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001.fastq.gz',
+    'reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001.fastq.gz',
+    'reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001.fastq.gz',
+]
+
+# Define output directory
+OUTDIR = "fastp_output"
+
+# Extract sample names and lanes
+from collections import defaultdict
+
+SAMPLE_LANE_PAIRS = defaultdict(list)
+
+for s in SAMPLES:
+    # Extract sample and lane from filename (e.g., hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001)
+    parts = s.split('/')[-1].split('_')
+    sample_lane = '_'.join(parts[:-2])  # e.g., hst3.4.1_ATTACTCG-TATAGCCT_L001
+    SAMPLE_LANE_PAIRS[sample_lane].append(s)
+
+# Rule to generate all fastp reports and trimmed files
+rule all:
+    input:
+        expand("{outdir}/{sample_lane}/{sample_lane}_fastp.html", outdir=OUTDIR, sample_lane=SAMPLE_LANE_PAIRS.keys()),
+        expand("{outdir}/{sample_lane}/{sample_lane}_R1.trimmed.fastq.gz", outdir=OUTDIR, sample_lane=SAMPLE_LANE_PAIRS.keys()),
+        expand("{outdir}/{sample_lane}/{sample_lane}_R2.trimmed.fastq.gz", outdir=OUTDIR, sample_lane=SAMPLE_LANE_PAIRS.keys())
+
+# Rule to run fastp on paired-end data
+rule fastp:
+    input:
+        r1=lambda wildcards: [s for s in SAMPLE_LANE_PAIRS[wildcards.sample_lane] if s.endswith('_R1_001.fastq.gz')][0],
+        r2=lambda wildcards: [s for s in SAMPLE_LANE_PAIRS[wildcards.sample_lane] if s.endswith('_R2_001.fastq.gz')][0]
+    output:
+        r1_trimmed="{outdir}/{sample_lane}/{sample_lane}_R1.trimmed.fastq.gz",
+        r2_trimmed="{outdir}/{sample_lane}/{sample_lane}_R2.trimmed.fastq.gz",
+        html="{outdir}/{sample_lane}/{sample_lane}_fastp.html",
+        json="{outdir}/{sample_lane}/{sample_lane}_fastp.json"
+    shell:
+        """
+        mkdir -p {wildcards.outdir}/{wildcards.sample_lane}
+        fastp \
+            --in1 {input.r1} \
+            --in2 {input.r2} \
+            --out1 {output.r1_trimmed} \
+            --out2 {output.r2_trimmed} \
+            --html {output.html} \
+            --json {output.json} \
+            --overrepresentation_analysis \
+            --thread 4
+        """

@@ -1,0 +1,10 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: MacBook-Air-Liliana.local
+Building DAG of jobs...
+MissingInputException in rule gunzip in file "/Users/liliana/Downloads/bioinf_bootcamp/Snakefile", line 32:
+Missing input files for rule gunzip:
+    output: unziped_reads/hst3.4.1_TCCGGAGA-TATAGCCT_L001_R1_001.fastq
+    wildcards: i=1, barcode=TCCGGAGA-TATAGCCT, lane=L001, pair=R1_001
+    affected files:
+        reads/Sample_hst3.4.1/hst3.4.1_TCCGGAGA-TATAGCCT_L001_R1_001.fastq.gz

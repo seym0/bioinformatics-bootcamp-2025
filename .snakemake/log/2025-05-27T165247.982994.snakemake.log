@@ -1,0 +1,923 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: MacBook-Air-Liliana.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+fastqc       64
+total        65
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue May 27 16:52:51 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.16/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001_fastqc.zip
+    jobid: 57
+    reason: Missing output files: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:53:04 2025]
+Finished jobid: 57 (Rule: fastqc)
+1 of 65 steps (2%) done
+Execute 1 jobs...
+[Tue May 27 16:53:04 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 50
+    reason: Missing output files: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:53:17 2025]
+Finished jobid: 50 (Rule: fastqc)
+2 of 65 steps (3%) done
+Execute 1 jobs...
+[Tue May 27 16:53:17 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.8/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 43
+    reason: Missing output files: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:53:30 2025]
+Finished jobid: 43 (Rule: fastqc)
+3 of 65 steps (5%) done
+Execute 1 jobs...
+[Tue May 27 16:53:30 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.6/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 37
+    reason: Missing output files: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:53:43 2025]
+Finished jobid: 37 (Rule: fastqc)
+4 of 65 steps (6%) done
+Execute 1 jobs...
+[Tue May 27 16:53:43 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.15/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001_fastqc.zip
+    jobid: 30
+    reason: Missing output files: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:53:54 2025]
+Finished jobid: 30 (Rule: fastqc)
+5 of 65 steps (8%) done
+Execute 1 jobs...
+[Tue May 27 16:53:54 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.13/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001_fastqc.zip
+    jobid: 23
+    reason: Missing output files: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:54:04 2025]
+Finished jobid: 23 (Rule: fastqc)
+6 of 65 steps (9%) done
+Execute 1 jobs...
+[Tue May 27 16:54:04 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.4/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 16
+    reason: Missing output files: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:54:19 2025]
+Finished jobid: 16 (Rule: fastqc)
+7 of 65 steps (11%) done
+Execute 1 jobs...
+[Tue May 27 16:54:19 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 8
+    reason: Missing output files: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:54:30 2025]
+Finished jobid: 8 (Rule: fastqc)
+8 of 65 steps (12%) done
+Execute 1 jobs...
+[Tue May 27 16:54:30 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.5/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 2
+    reason: Missing output files: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:54:45 2025]
+Finished jobid: 2 (Rule: fastqc)
+9 of 65 steps (14%) done
+Execute 1 jobs...
+[Tue May 27 16:54:45 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.16/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001_fastqc.zip
+    jobid: 58
+    reason: Missing output files: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:54:58 2025]
+Finished jobid: 58 (Rule: fastqc)
+10 of 65 steps (15%) done
+Execute 1 jobs...
+[Tue May 27 16:54:58 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 51
+    reason: Missing output files: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:55:12 2025]
+Finished jobid: 51 (Rule: fastqc)
+11 of 65 steps (17%) done
+Execute 1 jobs...
+[Tue May 27 16:55:12 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.8/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 44
+    reason: Missing output files: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:55:25 2025]
+Finished jobid: 44 (Rule: fastqc)
+12 of 65 steps (18%) done
+Execute 1 jobs...
+[Tue May 27 16:55:25 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.6/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 38
+    reason: Missing output files: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:55:38 2025]
+Finished jobid: 38 (Rule: fastqc)
+13 of 65 steps (20%) done
+Execute 1 jobs...
+[Tue May 27 16:55:38 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.15/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001_fastqc.zip
+    jobid: 31
+    reason: Missing output files: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:55:49 2025]
+Finished jobid: 31 (Rule: fastqc)
+14 of 65 steps (22%) done
+Execute 1 jobs...
+[Tue May 27 16:55:49 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.13/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001_fastqc.zip
+    jobid: 24
+    reason: Missing output files: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:56:00 2025]
+Finished jobid: 24 (Rule: fastqc)
+15 of 65 steps (23%) done
+Execute 1 jobs...
+[Tue May 27 16:56:00 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.14/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001_fastqc.zip
+    jobid: 17
+    reason: Missing output files: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:56:12 2025]
+Finished jobid: 17 (Rule: fastqc)
+16 of 65 steps (25%) done
+Execute 1 jobs...
+[Tue May 27 16:56:12 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.3/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 9
+    reason: Missing output files: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:56:24 2025]
+Finished jobid: 9 (Rule: fastqc)
+17 of 65 steps (26%) done
+Execute 1 jobs...
+[Tue May 27 16:56:25 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.5/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 3
+    reason: Missing output files: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:56:39 2025]
+Finished jobid: 3 (Rule: fastqc)
+18 of 65 steps (28%) done
+Execute 1 jobs...
+[Tue May 27 16:56:39 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.16/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001_fastqc.zip
+    jobid: 59
+    reason: Missing output files: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:56:52 2025]
+Finished jobid: 59 (Rule: fastqc)
+19 of 65 steps (29%) done
+Execute 1 jobs...
+[Tue May 27 16:56:52 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 52
+    reason: Missing output files: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:57:05 2025]
+Finished jobid: 52 (Rule: fastqc)
+20 of 65 steps (31%) done
+Execute 1 jobs...
+[Tue May 27 16:57:05 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.9/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 45
+    reason: Missing output files: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:57:16 2025]
+Finished jobid: 45 (Rule: fastqc)
+21 of 65 steps (32%) done
+Execute 1 jobs...
+[Tue May 27 16:57:16 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.6/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 39
+    reason: Missing output files: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:57:29 2025]
+Finished jobid: 39 (Rule: fastqc)
+22 of 65 steps (34%) done
+Execute 1 jobs...
+[Tue May 27 16:57:29 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.15/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001_fastqc.zip
+    jobid: 32
+    reason: Missing output files: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:57:40 2025]
+Finished jobid: 32 (Rule: fastqc)
+23 of 65 steps (35%) done
+Execute 1 jobs...
+[Tue May 27 16:57:40 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001_fastqc.zip
+    jobid: 25
+    reason: Missing output files: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:57:50 2025]
+Finished jobid: 25 (Rule: fastqc)
+24 of 65 steps (37%) done
+Execute 1 jobs...
+[Tue May 27 16:57:50 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.14/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001_fastqc.zip
+    jobid: 18
+    reason: Missing output files: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:58:02 2025]
+Finished jobid: 18 (Rule: fastqc)
+25 of 65 steps (38%) done
+Execute 1 jobs...
+[Tue May 27 16:58:02 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.3/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 10
+    reason: Missing output files: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:58:14 2025]
+Finished jobid: 10 (Rule: fastqc)
+26 of 65 steps (40%) done
+Execute 1 jobs...
+[Tue May 27 16:58:14 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.11/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 63
+    reason: Missing output files: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:58:24 2025]
+Finished jobid: 63 (Rule: fastqc)
+27 of 65 steps (42%) done
+Execute 1 jobs...
+[Tue May 27 16:58:24 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 7
+    reason: Missing output files: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:58:35 2025]
+Finished jobid: 7 (Rule: fastqc)
+28 of 65 steps (43%) done
+Execute 1 jobs...
+[Tue May 27 16:58:35 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.16/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001_fastqc.zip
+    jobid: 60
+    reason: Missing output files: fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:58:47 2025]
+Finished jobid: 60 (Rule: fastqc)
+29 of 65 steps (45%) done
+Execute 1 jobs...
+[Tue May 27 16:58:47 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.10/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 53
+    reason: Missing output files: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:00 2025]
+Finished jobid: 53 (Rule: fastqc)
+30 of 65 steps (46%) done
+Execute 1 jobs...
+[Tue May 27 16:59:00 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.9/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 46
+    reason: Missing output files: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:11 2025]
+Finished jobid: 46 (Rule: fastqc)
+31 of 65 steps (48%) done
+Execute 1 jobs...
+[Tue May 27 16:59:11 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.6/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 40
+    reason: Missing output files: fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:24 2025]
+Finished jobid: 40 (Rule: fastqc)
+32 of 65 steps (49%) done
+Execute 1 jobs...
+[Tue May 27 16:59:24 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 33
+    reason: Missing output files: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:35 2025]
+Finished jobid: 33 (Rule: fastqc)
+33 of 65 steps (51%) done
+Execute 1 jobs...
+[Tue May 27 16:59:35 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001_fastqc.zip
+    jobid: 26
+    reason: Missing output files: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:47 2025]
+Finished jobid: 26 (Rule: fastqc)
+34 of 65 steps (52%) done
+Execute 1 jobs...
+[Tue May 27 16:59:47 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.14/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001_fastqc.zip
+    jobid: 19
+    reason: Missing output files: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 16:59:59 2025]
+Finished jobid: 19 (Rule: fastqc)
+35 of 65 steps (54%) done
+Execute 1 jobs...
+[Tue May 27 16:59:59 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.3/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 12
+    reason: Missing output files: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:00:11 2025]
+Finished jobid: 12 (Rule: fastqc)
+36 of 65 steps (55%) done
+Execute 1 jobs...
+[Tue May 27 17:00:11 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.11/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 61
+    reason: Missing output files: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:00:22 2025]
+Finished jobid: 61 (Rule: fastqc)
+37 of 65 steps (57%) done
+Execute 1 jobs...
+[Tue May 27 17:00:22 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.5/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 4
+    reason: Missing output files: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:00:36 2025]
+Finished jobid: 4 (Rule: fastqc)
+38 of 65 steps (58%) done
+Execute 1 jobs...
+[Tue May 27 17:00:36 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.10/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 54
+    reason: Missing output files: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:00:49 2025]
+Finished jobid: 54 (Rule: fastqc)
+39 of 65 steps (60%) done
+Execute 1 jobs...
+[Tue May 27 17:00:49 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.9/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 47
+    reason: Missing output files: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:01:00 2025]
+Finished jobid: 47 (Rule: fastqc)
+40 of 65 steps (62%) done
+Execute 1 jobs...
+[Tue May 27 17:01:00 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.10/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 56
+    reason: Missing output files: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:01:13 2025]
+Finished jobid: 56 (Rule: fastqc)
+41 of 65 steps (63%) done
+Execute 1 jobs...
+[Tue May 27 17:01:13 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.7/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 49
+    reason: Missing output files: fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:01:26 2025]
+Finished jobid: 49 (Rule: fastqc)
+42 of 65 steps (65%) done
+Execute 1 jobs...
+[Tue May 27 17:01:26 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 34
+    reason: Missing output files: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:01:38 2025]
+Finished jobid: 34 (Rule: fastqc)
+43 of 65 steps (66%) done
+Execute 1 jobs...
+[Tue May 27 17:01:38 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001_fastqc.zip
+    jobid: 27
+    reason: Missing output files: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:01:50 2025]
+Finished jobid: 27 (Rule: fastqc)
+44 of 65 steps (68%) done
+Execute 1 jobs...
+[Tue May 27 17:01:50 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.14/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001_fastqc.zip
+    jobid: 20
+    reason: Missing output files: fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:02:01 2025]
+Finished jobid: 20 (Rule: fastqc)
+45 of 65 steps (69%) done
+Execute 1 jobs...
+[Tue May 27 17:02:01 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.4/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 13
+    reason: Missing output files: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:02:16 2025]
+Finished jobid: 13 (Rule: fastqc)
+46 of 65 steps (71%) done
+Execute 1 jobs...
+[Tue May 27 17:02:16 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 6
+    reason: Missing output files: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:02:26 2025]
+Finished jobid: 6 (Rule: fastqc)
+47 of 65 steps (72%) done
+Execute 1 jobs...
+[Tue May 27 17:02:26 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.11/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 64
+    reason: Missing output files: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:02:37 2025]
+Finished jobid: 64 (Rule: fastqc)
+48 of 65 steps (74%) done
+Execute 1 jobs...
+[Tue May 27 17:02:37 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.10/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 55
+    reason: Missing output files: fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:02:49 2025]
+Finished jobid: 55 (Rule: fastqc)
+49 of 65 steps (75%) done
+Execute 1 jobs...
+[Tue May 27 17:02:49 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.5/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 1
+    reason: Missing output files: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:03:04 2025]
+Finished jobid: 1 (Rule: fastqc)
+50 of 65 steps (77%) done
+Execute 1 jobs...
+[Tue May 27 17:03:04 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 35
+    reason: Missing output files: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:03:15 2025]
+Finished jobid: 35 (Rule: fastqc)
+51 of 65 steps (78%) done
+Execute 1 jobs...
+[Tue May 27 17:03:15 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.12/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001_fastqc.zip
+    jobid: 28
+    reason: Missing output files: fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:03:27 2025]
+Finished jobid: 28 (Rule: fastqc)
+52 of 65 steps (80%) done
+Execute 1 jobs...
+[Tue May 27 17:03:27 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.13/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001_fastqc.zip
+    jobid: 21
+    reason: Missing output files: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:03:39 2025]
+Finished jobid: 21 (Rule: fastqc)
+53 of 65 steps (82%) done
+Execute 1 jobs...
+[Tue May 27 17:03:39 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.4/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 14
+    reason: Missing output files: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:03:53 2025]
+Finished jobid: 14 (Rule: fastqc)
+54 of 65 steps (83%) done
+Execute 1 jobs...
+[Tue May 27 17:03:53 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.3/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 11
+    reason: Missing output files: fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:04:05 2025]
+Finished jobid: 11 (Rule: fastqc)
+55 of 65 steps (85%) done
+Execute 1 jobs...
+[Tue May 27 17:04:05 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.9/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 48
+    reason: Missing output files: fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:04:15 2025]
+Finished jobid: 48 (Rule: fastqc)
+56 of 65 steps (86%) done
+Execute 1 jobs...
+[Tue May 27 17:04:15 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.13/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001_fastqc.zip
+    jobid: 22
+    reason: Missing output files: fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:04:26 2025]
+Finished jobid: 22 (Rule: fastqc)
+57 of 65 steps (88%) done
+Execute 1 jobs...
+[Tue May 27 17:04:26 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.4/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001_fastqc.zip
+    jobid: 15
+    reason: Missing output files: fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:04:40 2025]
+Finished jobid: 15 (Rule: fastqc)
+58 of 65 steps (89%) done
+Execute 1 jobs...
+[Tue May 27 17:04:40 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.11/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001_fastqc.zip
+    jobid: 62
+    reason: Missing output files: fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:04:51 2025]
+Finished jobid: 62 (Rule: fastqc)
+59 of 65 steps (91%) done
+Execute 1 jobs...
+[Tue May 27 17:04:51 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.2/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 5
+    reason: Missing output files: fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:05:03 2025]
+Finished jobid: 5 (Rule: fastqc)
+60 of 65 steps (92%) done
+Execute 1 jobs...
+[Tue May 27 17:05:03 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.8/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001.fastq.gz
+    output: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001_fastqc.zip
+    jobid: 41
+    reason: Missing output files: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:05:15 2025]
+Finished jobid: 41 (Rule: fastqc)
+61 of 65 steps (94%) done
+Execute 1 jobs...
+[Tue May 27 17:05:15 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.8/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 42
+    reason: Missing output files: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:05:28 2025]
+Finished jobid: 42 (Rule: fastqc)
+62 of 65 steps (95%) done
+Execute 1 jobs...
+[Tue May 27 17:05:28 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.1/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001_fastqc.zip
+    jobid: 36
+    reason: Missing output files: fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+Select jobs to execute...
+[Tue May 27 17:05:39 2025]
+Finished jobid: 36 (Rule: fastqc)
+63 of 65 steps (97%) done
+Execute 1 jobs...
+[Tue May 27 17:05:39 2025]
+localrule fastqc:
+    input: reads/Sample_hst3.4.15/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001.fastq.gz
+    output: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001_fastqc.zip
+    jobid: 29
+    reason: Missing output files: fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001_fastqc.html
+    wildcards: outdir=fastqc_reports, sample_basename=hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+[Tue May 27 17:05:50 2025]
+Finished jobid: 29 (Rule: fastqc)
+64 of 65 steps (98%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue May 27 17:05:50 2025]
+localrule all:
+    input: fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001_fastqc.html
+    jobid: 0
+    reason: Input files updated by another job: fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.14_TCTCGCGC-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.10_TCTCGCGC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.12_CGGCTATG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.8_TAATGCGC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.7_CTGAAGCT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.2_TCCGGAGA-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.15_AGCGATAG-GGCTCTGA_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.16_TCTCGCGC-CAGGACGT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.13_TCCGCGAA-GGCTCTGA_L001_R2_001_fastqc.html, fastqc_reports/hst3.4.4_GAGATTCC-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.6_GAATTCGT-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.9_CGGCTATG-TATAGCCT_L002_R1_001_fastqc.html, fastqc_reports/hst3.4.11_AGCGATAG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.1_ATTACTCG-TATAGCCT_L002_R2_001_fastqc.html, fastqc_reports/hst3.4.3_CGCTCATT-TATAGCCT_L001_R1_001_fastqc.html, fastqc_reports/hst3.4.5_ATTCAGAA-TATAGCCT_L002_R2_001_fastqc.html
+    resources: tmpdir=/var/folders/jf/fc2ycvxs58q7y72vn7vv9rxc0000gn/T
+
+[Tue May 27 17:05:50 2025]
+Finished jobid: 0 (Rule: all)
+65 of 65 steps (100%) done
+Complete log(s): /Users/liliana/Downloads/bioinf_bootcamp/.snakemake/log/2025-05-27T165247.982994.snakemake.log
