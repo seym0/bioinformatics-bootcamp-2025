@@ -3,3 +3,4 @@
 /reads/
 /S288C/
 .DS_Store
+.snakemake/
