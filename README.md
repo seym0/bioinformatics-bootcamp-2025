@@ -82,6 +82,8 @@ for i in {1..16}; do
 done
 ```
 
+## Генотипирование 
+
 [GATK](https://gatk.broadinstitute.org/hc/en-us):
 
 ```bash
@@ -96,10 +98,6 @@ while read BAM; do
     -ploidy 1
 done < bam_list.txt
 ```
-
-
-
-## Генотипирование
 
 
 ## Аннотация
