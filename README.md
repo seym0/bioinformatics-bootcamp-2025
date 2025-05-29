@@ -97,7 +97,43 @@ while read BAM; do
     -ERC GVCF \
     -ploidy 1
 done < bam_list.txt
-```
 
+gatk CombineGVCFs \
+  -R "$REFERENCE" \
+  $(while read BAM; do SAMPLE=$(basename "$BAM" .bam); echo "-V ${SAMPLE}.g.vcf.gz"; done < bam_list.txt) \
+  -O combined.g.vcf.gz
+
+gatk GenotypeGVCFs \
+  -R "$REFERENCE" \
+  -V combined.g.vcf.gz \
+  -O raw_variants.vcf.gz
+
+gatk SelectVariants \
+  -R "$REFERENCE" \
+  -V raw_variants.vcf.gz \
+  --select-type-to-include SNP \
+  -O raw_snps.vcf.gz
+
+gatk SelectVariants \
+  -R "$REFERENCE" \
+  -V raw_variants.vcf.gz \
+  --select-type-to-include INDEL \
+  -O raw_indels.vcf.gz
+
+gatk VariantFiltration \
+  -R "$REFERENCE" \
+  -V raw_snps.vcf.gz \
+  -O filtered_snps.vcf.gz \
+  --filter-name "LowQual" \
+  --filter-expression "QUAL < 30.0 || DP < 10 || QD < 2.0 || MQ < 40.0  || MQRankSum < -12.5 || ReadPosRankSum < -8.0"
+
+gatk VariantFiltration \
+  -R "$REFERENCE" \
+  -V raw_indels.vcf.gz \
+  -O filtered_indels.vcf.gz \
+  --filter-name "LowQual" \
+  --filter-expression "QUAL < 30.0 || DP < 10 || QD < 2.0 || ReadPosRankSum < -20.0"
+
+```
 
 ## Аннотация
