@@ -57,7 +57,7 @@ for i in {1..16}; do
 done
 ```
 
-Маркирование дубликатов с помощью [picard](https://github.com/broadinstitute/picard):
+Маркирование дубликатов без удаления с помощью [picard](https://github.com/broadinstitute/picard):
 ```bash
 mkdir -p aligned/dedup
 
